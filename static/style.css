@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 .btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
 .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
 .btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
@@ -60,4 +60,134 @@ textarea {
 	-ms-transition: box-shadow .5s ease;
 	transition: box-shadow .5s ease;
 }
-input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); } */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+	box-sizing: border-box;
+   
+}
+
+:root {
+	--primary-color:#1D4ED8;
+	--off-white: #D1D5DB;
+	--dark-gray: #6B7280;
+	--width-break: 600px;
+}
+
+body {
+	font-family: 'Open Sans';
+overflow:scroll;
+	margin: 0px;
+}
+
+hr {
+
+	margin: 2rem 0rem;
+}
+
+.navbar{
+	font-size: 2rem;
+	 padding: 1rem;
+	 text-align: center;
+	 color:black;
+	 background-color: #FCD34D;
+	 box-sizing: border-box;
+
+	}
+.align{
+	text-align: center;
+}
+
+
+.textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	min-height: 20vh;
+	margin-top: 2rem;
+	font-size: large;
+	font-family: inherit;
+}
+
+.output{
+
+box-sizing: border-box;
+width: 100%;
+display:block;
+min-height: 10vh;
+max-height: 20vh;
+overflow: scroll;
+border: 1px solid black;
+padding: 1rem;
+font-size: large;
+}
+
+
+
+.container{
+ padding:0rem 1rem;
+ 
+}
+
+.container-center{
+max-width: 600px;
+margin:auto;
+}
+
+.navigation{
+background-color: #FCD34D;
+color: white;
+padding: 1rem;
+border-bottom-left-radius: 1rem;
+}
+
+.section{
+
+padding: 2rem;
+}
+
+.section-h1 {
+
+text-align: center;
+}
+
+.button{
+
+font-family: 'Open Sans';
+background-color: #FCD34D;
+color: black;
+margin: 1rem 0rem;
+padding: 1rem 2rem;
+font-size: large;
+
+}
+
+
+::placeholder{
+font-family: 'Open Sans';
+}
+
+.footer{
+	font-size: 2rem;
+	padding: 1rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 1rem;
+	background-color: #FCD34D;
+	color: black;
+	text-align: center;
+}
+
+.para {
+	font-size: large;
+	
+	max-width: var(--width-break);
+	margin:auto;
+
+}
+
+

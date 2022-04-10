@@ -12,24 +12,59 @@
 </head>
 
 <body>
- <div class="login">
-	<h1>Fake News📰  Detector</h1>
+	<nav>
+       
+       
+        <div class="navbar">
+            Fake News📰 Detector
+        </div>
+    
+    </nav>
+
 
     <form action="{{ url_for('predict')}}" method="POST">
-    	<textarea  name="message" rows="6" cols="50" required="required" style="font-size: 18pt"></textarea>
+    	<section id="section-h1">
+			<div class="container container-center">
+	
+		<textarea name="message" class="textarea" id="txt-input" placeholder="type your text here"></textarea>
+		</div>
+		</section>
+
 		<br> </br>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <!-- <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button> -->
+		<section  id="section section-h1">
+			<div class="container container-center">
+		<button class="button btn btn-primary btn-block btn-large" type="submit">Predict</button>
+			</div>
+			<br>
+			<br>
+	
+	</section>
 
         	<div class="results">
 
 	{% if prediction == ['FAKE']%}
-	<h2 style="color:red;">Looking Spam⚠️News📰 </h2>
+	<h2 class="container container-center" style="color:red;">Looking Spam⚠️News📰 </h2>
 	{% elif prediction == ['REAL']%}
-				<h2 style="color:green;"><b>Looking Real News📰</b></h2>
+				<h2 class="container container-center" style="color:green;"><b>Looking Real News📰</b></h2>
 	{% endif %}
 
 	</div>
 
     </form>
+	<footer class="footer">
+        <div style="font-size: x-large; color: black;">About
+        </div>
+		<div> 
+			<p class="para">
+				Fake News has become one of the biggest
+problems in the current society. By
+creating a Passive Aggressive Classifier model, false
+news can detected
+		 
+			   </p>
+		   </div>
+	 
+	   </footer>
+	</div>
 
-</div>
